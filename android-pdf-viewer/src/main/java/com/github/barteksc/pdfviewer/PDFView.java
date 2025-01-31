@@ -827,7 +827,8 @@ public class PDFView extends RelativeLayout {
             // Check Y offset
             float scaledPageHeight = toCurrentScale(pdfFile.getMaxPageHeight());
             if (scaledPageHeight < getHeight()) {
-                offsetY = getHeight() / 2 - scaledPageHeight / 2;
+                // offsetY = getHeight() / 2 - scaledPageHeight / 2;
+                offsetY = 0;
             } else {
                 if (offsetY > 0) {
                     offsetY = 0;
